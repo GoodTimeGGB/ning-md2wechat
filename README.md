@@ -8,8 +8,8 @@
 
 - 排版工具：<https://goodtimeggb.github.io/ning-md2wechat/>
 - 项目仓库：<https://github.com/GoodTimeGGB/ning-md2wechat>
-- 主题示例页 ①（手绘/卡通/书法/极简/极客）：[examples/demo-themes-v1.html](examples/demo-themes-v1.html)
-- 主题示例页 ②（杂志/柔光/棱镜/山水/故事）：[examples/demo-themes-v2.html](examples/demo-themes-v2.html)
+- 主题示例页 ①（手绘/卡通/书法/极简/极客）：<https://goodtimeggb.github.io/ning-md2wechat/examples/demo-themes-v1.html>
+- 主题示例页 ②（杂志/柔光/棱镜/山水/故事）：<https://goodtimeggb.github.io/ning-md2wechat/examples/demo-themes-v2.html>
 
 > 网站由 GitHub Pages 从 `main` 分支根目录发布。推送到 `main` 后，GitHub Pages 会自动更新；首次发布通常需要几分钟生效。
 

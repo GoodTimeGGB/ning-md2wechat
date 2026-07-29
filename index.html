@@ -772,7 +772,7 @@ function applyTheme(root, t){
     }
   }
 
-  if(optSignature.checked) root.insertAdjacentHTML('beforeend', t.signature());
+  if(optSignature.checked && root.textContent.trim()) root.insertAdjacentHTML('beforeend', t.signature());
 }
 
 /* 代码块右上角加"复制代码"按钮（仅预览交互层，复制正文时剔除） */
@@ -808,6 +808,20 @@ function copyText(text){
 function render(){
   const t = THEMES[currentTheme];
   const md = editor.value;
+  /* 空内容：只显示主题底色+提示，不追加签名 */
+  if(!md.trim()){
+    preview.setAttribute('style', t.page);
+    preview.innerHTML = '<p style="margin:80px 0;text-align:center;font-size:14px;color:#b6b6b6;letter-spacing:1px;">在左侧输入 Markdown，这里实时显示排版效果</p>';
+    previewScroll.style.background = t.previewBg;
+    themeNameEl.textContent = t.name;
+    wordCountEl.textContent = '0 字';
+    document.querySelectorAll('.theme-pill').forEach(p=>{
+      p.classList.toggle('active', p.dataset.id === currentTheme);
+    });
+    localStorage.setItem('nzmd_content', md);
+    localStorage.setItem('nzmd_theme', currentTheme);
+    return;
+  }
   preview.innerHTML = parseMD(md);
   applyTheme(preview, t);
   addCodeCopyButtons();
@@ -917,6 +931,8 @@ const SAMPLE = `# 不只是"聊天机器人"——AI Agent 到底是什么？
 - **GitHub Copilot**：从 Issue 到 PR 全自动
 
 秒哒官网直接访问：https://miaoda.baidu.com 就能开始创建应用。
+
+![图：在线图片示例——替换成你的文章配图即可](https://picsum.photos/id/1015/600/320)
 
 上一篇回顾戳这里：[AI 聊着聊着就"变笨"了？——上下文窗口深度解析](https://mp.weixin.qq.com/s/example)
 
