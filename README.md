@@ -6,11 +6,12 @@
 
 ## 在线体验
 
-- 排版工具：<https://f0cd0e25d8ef4e1298ba64c9c2cbd455.gz5.agentos-app.net>
+- 排版工具：<https://goodtimeggb.github.io/ning-md2wechat/>
+- 项目仓库：<https://github.com/GoodTimeGGB/ning-md2wechat>
 - 主题示例页 ①（手绘/卡通/书法/极简/极客）：[examples/demo-themes-v1.html](examples/demo-themes-v1.html)
 - 主题示例页 ②（杂志/柔光/棱镜/山水/故事）：[examples/demo-themes-v2.html](examples/demo-themes-v2.html)
 
-> 部署到 GitHub Pages 后，把上面工具链接替换为 `https://<你的用户名>.github.io/ning-md2wechat/`，示例页即 `.../ning-md2wechat/examples/demo-themes-v1.html`。
+> 网站由 GitHub Pages 从 `main` 分支根目录发布。推送到 `main` 后，GitHub Pages 会自动更新；首次发布通常需要几分钟生效。
 
 ## 功能
 
@@ -59,7 +60,7 @@
 Fork 或克隆本仓库后，仓库 Settings → Pages → Source 选 `main` 分支根目录，几分钟后访问：
 
 ```
-https://<你的用户名>.github.io/ning-md2wechat/
+https://goodtimeggb.github.io/ning-md2wechat/
 ```
 
 详细发布步骤见 [docs/RELEASE.md](docs/RELEASE.md)。

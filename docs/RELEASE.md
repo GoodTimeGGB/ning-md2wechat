@@ -1,73 +1,35 @@
-# 发布指南：GitHub 仓库 + GitHub Pages
+# 发布与维护指南
 
-本仓库已按标准结构准备好，按以下步骤发布（约 5 分钟）。
+项目仓库：<https://github.com/GoodTimeGGB/ning-md2wechat>
 
-## 一、初始化本地仓库并提交
+在线工具：<https://goodtimeggb.github.io/ning-md2wechat/>
 
-在 `ning-md2wechat/` 目录下执行：
+本项目是零依赖静态页面。GitHub Pages 从 `main` 分支的根目录发布，根目录的 `index.html` 即为在线工具首页。
+
+## 日常更新
+
+修改 `index.html`、示例文件或 README 后，在项目根目录执行：
 
 ```bash
-cd ning-md2wechat
-git init
 git add -A
-git commit -m "feat: 宁的AI小站公众号排版工具 v1.0"
+git commit -m "feat: 描述本次改动"
+git push origin main
 ```
 
-## 二、在 GitHub 创建远程仓库
+GitHub Pages 会在推送后自动重新部署。首次部署或较大更新可能需要几分钟生效。
 
-1. 打开 <https://github.com/new>
-2. Repository name 填：`ning-md2wechat`
-3. Public / Private 自选（Pages 公开访问需要 Public，或账号有 Pro 的 Private Pages）
-4. **不要**勾选 "Add a README"（仓库里已有）
-5. 点 Create repository
-
-## 三、推送代码
-
-把 `<你的用户名>` 换成你的 GitHub 用户名：
-
-```bash
-git remote add origin https://github.com/<你的用户名>/ning-md2wechat.git
-git branch -M main
-git push -u origin main
-```
-
-## 四、开启 GitHub Pages（示例页 + 在线工具）
-
-1. 仓库页面 → **Settings** → 左侧 **Pages**
-2. Source 选 **Deploy from a branch**
-3. Branch 选 **main**，目录选 **/ (root)**，点 Save
-4. 等 1-3 分钟，访问：
+## 页面地址
 
 | 页面 | 地址 |
 |------|------|
-| 在线排版工具 | `https://<你的用户名>.github.io/ning-md2wechat/` |
-| 主题示例页 ① | `https://<你的用户名>.github.io/ning-md2wechat/examples/demo-themes-v1.html` |
-| 主题示例页 ② | `https://<你的用户名>.github.io/ning-md2wechat/examples/demo-themes-v2.html` |
+| 在线排版工具 | <https://goodtimeggb.github.io/ning-md2wechat/> |
+| 主题示例页 ① | <https://goodtimeggb.github.io/ning-md2wechat/examples/demo-themes-v1.html> |
+| 主题示例页 ② | <https://goodtimeggb.github.io/ning-md2wechat/examples/demo-themes-v2.html> |
 
-## 五、发布后更新 README
+## 故障排查
 
-README.md 顶部的"在线体验"链接目前指向临时演示地址，发布成功后把它替换成你的 Pages 地址，再提交一次：
+- **页面暂时 404**：确认 `main` 分支已推送，并等待 GitHub Pages 完成部署后刷新。
+- **样式在微信中丢失**：工具复制的是内联样式 HTML；检查是否在公众号编辑器内再次手动调整了粘贴内容。
+- **外部链接无法点击**：这是微信公众号平台限制，文章内通常仅微信域名链接可点击。
 
-```bash
-git add README.md
-git commit -m "docs: 更新在线体验地址为 GitHub Pages"
-git push
-```
-
-## 日常更新流程
-
-以后改了 `index.html`（比如加主题、修 bug）：
-
-```bash
-git add -A
-git commit -m "feat/fix: 改动说明"
-git push
-```
-
-Pages 会自动重新部署（约 1 分钟），无需其他操作。
-
-## 常见问题
-
-- **Pages 404**：确认分支和目录选对；确认访问路径大小写一致；首次部署等 3 分钟再刷新。
-- **样式在微信里丢失**：工具输出全部内联样式，正常不会丢；若个别丢失，检查是否手动改过公众号编辑器里的内容。
-- **外链不可点**：公众号平台限制，只有 `mp.weixin.qq.com` 域名链接可在文章内点击，与工具无关。
+详细功能说明与本地使用方式见 [README](../README.md)。
