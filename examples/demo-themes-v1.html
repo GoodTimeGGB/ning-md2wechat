@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宁的AI小站 · 5种主题对比演示</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+.theme-nav { position: sticky; top: 0; z-index: 100; background: #0d1117; padding: 12px 20px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; border-bottom: 1px solid #30363d; }
+.theme-nav a { color: #8b949e; text-decoration: none; font-size: 13px; padding: 6px 14px; border-radius: 20px; border: 1px solid #30363d; transition: all 0.2s; }
+.theme-nav a:hover { color: #fff; background: #21262d; }
+.theme-nav a.active { color: #fff; background: #0969da; border-color: #0969da; }
+.theme-section { padding: 40px 20px; }
+.theme-label { text-align: center; margin-bottom: 30px; }
+.theme-label h2 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 6px; }
+.theme-label p { font-size: 14px; color: #8b949e; }
+.demo-card { max-width: 677px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav class="theme-nav">
+  <a href="#handdrawn" class="active">手绘笔记风</a>
+  <a href="#cartoon">活力卡通风</a>
+  <a href="#ink">水墨书法风</a>
+  <a href="#minimal">极简留白风</a>
+  <a href="#geek">代码极客风</a>
+</nav>
+<p style="text-align:center;padding:14px 20px 0;color:#8b949e;font-size:13px;background:#1a1a2e;">本页展示 5 套主题（手绘/卡通/书法/极简/极客）· 另 5 套（杂志/柔光/棱镜/山水/故事）见 <a href="demo-themes-v2.html" style="color:#58a6ff;">demo-themes-v2.html</a> · <a href="../index.html" style="color:#58a6ff;">打开排版工具</a></p>
+
+<!-- ===== 1. 手绘笔记风 ===== -->
+<section class="theme-section" id="handdrawn" style="background: #e8e4dc;">
+  <div class="theme-label">
+    <h2>📖 手绘笔记风</h2>
+    <p>虚线边框 · 暖色纸感 · 手写温度 · 默认主题</p>
+  </div>
+  <div class="demo-card" style="background: #faf8f3; border-radius: 8px; border: 2px dashed #c4bda8; overflow: hidden;">
+    <div style="padding: 12px 20px; background: #f5f1e8; border-bottom: 2px dashed #c4bda8; display: flex; justify-content: space-between; align-items: center;">
+      <span style="font-size: 13px; color: #4a4a4a;">📖 手绘笔记风 · 宁的AI小站</span>
+    </div>
+    <div style="padding: 20px 16px;">
+
+      <!-- 标题区 -->
+      <section style="margin-bottom: 36px; text-align: center;">
+        <p style="font-size: 12px; color: #8a8a8a; letter-spacing: 2px; margin-bottom: 12px; font-family: Georgia,serif;">AI 基础设施科普 · 第 5 篇</p>
+        <h1 style="font-size: 24px; font-weight: 700; color: #3d6ea5; line-height: 1.5; margin: 0 0 10px; font-family: Georgia,serif;">不只是"聊天机器人"</h1>
+        <p style="font-size: 15px; color: #8a8a8a; margin: 0 0 14px; font-family: Georgia,serif;">——AI Agent 到底是什么？</p>
+        <section style="display: inline-block; border-bottom: 2px dashed #c4bda8; padding: 0 20px 4px;">
+          <p style="font-size: 13px; color: #b0a890; margin: 0;">让 AI 从"只会说话"变成"会自己干活"</p>
+        </section>
+      </section>
+
+      <!-- 系列导语 -->
+      <section style="background: #f5f1e8; border: 2px dashed #c4bda8; border-radius: 6px; padding: 16px 20px; margin: 0 0 28px;">
+        <p style="margin: 0; font-size: 15px; color: #4a4a4a; line-height: 1.9; letter-spacing: 0.5px;">本文是「AI 基础设施科普」系列第 <strong style="color: #3d6ea5;">5</strong> 篇。上一篇我们聊了上下文窗口，知道了 AI 为什么会"变笨"。今天聊 AI 怎么从"只会说话"变成"会自己干活"。</p>
+      </section>
+
+      <!-- 核心论断 -->
+      <p style="font-size: 17px; line-height: 1.9; color: #3d6ea5; margin: 0 0 22px; font-weight: 700; letter-spacing: 0.5px;"><strong>Chatbot 只能"说话"，Agent 能"做事。"</strong></p>
+
+      <!-- 章节标题 -->
+      <section style="margin: 40px 0 18px;">
+        <h2 style="font-size: 19px; font-weight: 700; color: #4a4a4a; margin: 0; padding-left: 14px; border-left: 3px solid #3d6ea5; line-height: 1.5; font-family: Georgia,serif;">一、Chatbot 和 Agent 有什么区别？</h2>
+      </section>
+
+      <!-- 正文 -->
+      <p style="font-size: 16px; line-height: 1.9; color: #4a4a4a; margin: 0 0 22px; letter-spacing: 0.5px;">你可能用过 ChatGPT 聊天，也听过"AI Agent"这个词。它们最大的区别可以用一句话说清：</p>
+
+      <!-- 类比引用块 -->
+      <section style="background: #f5f1e8; border-left: 3px dashed #c4bda8; padding: 16px 20px; margin: 0 0 22px; border-radius: 0 6px 6px 0;">
+        <p style="margin: 0 0 12px; font-size: 15px; color: #5a5a5a; line-height: 1.9; letter-spacing: 0.5px;">你去餐厅，Chatbot 像一个只会念菜单的服务员——你问什么它答什么，但不会帮你下单、上菜、结账。</p>
+        <p style="margin: 0; font-size: 15px; color: #5a5a5a; line-height: 1.9; letter-spacing: 0.5px;">Agent 像一个真正的餐厅经理——你告诉他"我要办一场十人聚餐"，他自己安排菜单、下单、排座位、催菜。</p>
+      </section>
+
+      <!-- 对比表格 -->
+      <section style="margin: 24px 0; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <thead><tr>
+            <th style="padding: 10px 12px; text-align: center; color: #3d6ea5; font-weight: 600; border-bottom: 2px dashed #3d6ea5; font-family: Georgia,serif;">维度</th>
+            <th style="padding: 10px 12px; text-align: center; color: #3d6ea5; font-weight: 600; border-bottom: 2px dashed #3d6ea5; font-family: Georgia,serif;">Chatbot</th>
+            <th style="padding: 10px 12px; text-align: center; color: #3d6ea5; font-weight: 600; border-bottom: 2px dashed #3d6ea5; font-family: Georgia,serif;">Agent</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding: 10px 12px; text-align: center; color: #4a4a4a; font-weight: 600; border-bottom: 1px dashed #d4cfc4;">交互方式</td><td style="padding: 10px 12px; text-align: center; color: #8a8a8a; border-bottom: 1px dashed #d4cfc4;">你说一句，它回一句</td><td style="padding: 10px 12px; text-align: center; color: #8a8a8a; border-bottom: 1px dashed #d4cfc4;">你给目标，它拆步骤执行</td></tr>
+            <tr><td style="padding: 10px 12px; text-align: center; color: #4a4a4a; font-weight: 600; border-bottom: 1px dashed #d4cfc4;">工具使用</td><td style="padding: 10px 12px; text-align: center; color: #8a8a8a; border-bottom: 1px dashed #d4cfc4;">不能调用外部工具</td><td style="padding: 10px 12px; text-align: center; color: #8a8a8a; border-bottom: 1px dashed #d4cfc4;">可以读写文件、搜索网络</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- STEP 步骤 -->
+      <section style="margin: 28px 0 22px;">
+        <section style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="background: #3d6ea5; color: #fff; font-size: 12px; font-weight: 600; padding: 3px 12px; border-radius: 3px; letter-spacing: 1px;">STEP 1</span>
+          <span style="font-size: 17px; font-weight: 600; color: #4a4a4a;">用自然语言描述需求</span>
+        </section>
+        <p style="font-size: 16px; line-height: 1.9; color: #4a4a4a; margin: 0; letter-spacing: 0.5px;">打开秒哒，进创作页面选类型——H5网页、小程序或App。大白话把需求说出来就行。</p>
+      </section>
+
+      <!-- 提示标注 -->
+      <section style="background: #f5f1e8; border-left: 3px dashed #e8814a; padding: 14px 20px; margin: 20px 0; border-radius: 0 6px 6px 0;">
+        <p style="margin: 0; font-size: 15px; color: #5a5a5a; line-height: 1.9; letter-spacing: 0.5px;"><strong style="color: #e8814a;">关键数据</strong>　传统开发2万元/4个月；秒哒不到50元/不到1小时。</p>
+      </section>
+
+      <!-- 分隔线 -->
+      <section style="text-align: center; margin: 36px 0;">
+        <span style="display: inline-block; width: 40px; border-top: 2px dashed #c4bda8;"></span>
+        <span style="display: inline-block; margin: 0 8px; color: #c4bda8; font-size: 14px;">✦</span>
+        <span style="display: inline-block; width: 40px; border-top: 2px dashed #c4bda8;"></span>
+      </section>
+
+      <!-- 金句 -->
+      <section style="background: #f5f1e8; border: 2px dashed #3d6ea5; border-radius: 6px; padding: 18px 22px; margin: 24px 0;">
+        <p style="margin: 0; font-size: 16px; color: #3d6ea5; line-height: 1.9; font-weight: 600; letter-spacing: 0.5px;"><strong>Chatbot 是 AI 的"嘴"，Agent 是 AI 的"嘴 + 手 + 脑。"</strong></p>
+      </section>
+
+      <!-- 下一篇 -->
+      <section style="text-align: center; margin: 28px 0; padding: 16px 20px; border: 2px dashed #3d6ea5; border-radius: 6px; background: #faf8f3;">
+        <p style="font-size: 14px; color: #8a8a8a; margin: 0; line-height: 1.9;">下一篇我们聊 <strong style="color: #3d6ea5;">RAG</strong>——让 AI 读你的私有数据而不是瞎编。</p>
+      </section>
+
+      <!-- END -->
+      <section style="text-align: center; margin: 36px 0 20px;">
+        <span style="font-size: 18px; color: #c4bda8;">~</span>
+        <span style="font-size: 14px; color: #c4bda8; margin: 0 6px; letter-spacing: 2px;">END</span>
+        <span style="font-size: 18px; color: #c4bda8;">~</span>
+      </section>
+
+      <!-- 签名 -->
+      <section style="margin-top: 40px; padding-top: 24px; border-top: 2px dashed #c4bda8;">
+        <p style="font-size: 15px; color: #4a4a4a; line-height: 2; margin: 0 0 8px; letter-spacing: 0.5px;">我是 <strong style="color: #3d6ea5;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color: #3d6ea5;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
+        <p style="font-size: 14px; color: #8a8a8a; line-height: 2; margin: 0 0 10px; letter-spacing: 0.5px;">点击主页加群或者私信加群一起学习AI。</p>
+        <p style="font-size: 15px; color: #4a4a4a; line-height: 2; margin: 0; letter-spacing: 0.5px;">如果你觉得今天这篇有收获，欢迎<strong style="color: #e8814a;">点赞、在看、转发</strong>三连，我们下篇见。</p>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. 活力卡通风 ===== -->
+<section class="theme-section" id="cartoon" style="background: #f0f0f0;">
+  <div class="theme-label">
+    <h2 style="color: #333;">🎨 活力卡通风</h2>
+    <p>大圆角 · 彩色标签 · 明亮活泼 · 轻松愉快</p>
+  </div>
+  <div class="demo-card" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+    <div style="padding: 14px 20px; background: #4A90D9; font-size: 13px; color: #fff;">🎨 活力卡通风 · 宁的AI小站</div>
+    <div style="padding: 20px 16px;">
+
+      <section style="margin-bottom: 36px; text-align: center;">
+        <section style="display: inline-block; background: #4A90D9; color: #fff; font-size: 12px; padding: 4px 16px; border-radius: 20px; margin-bottom: 14px;">AI 基础设施科普 · 第 5 篇</section>
+        <h1 style="font-size: 24px; font-weight: 800; color: #333; line-height: 1.5; margin: 0 0 10px;">不只是"聊天机器人"</h1>
+        <p style="font-size: 15px; color: #888; margin: 0 0 14px;">——AI Agent 到底是什么？</p>
+        <section style="display: inline-block; background: #FFFBE6; border: 1px solid #FAAD14; border-radius: 20px; padding: 4px 16px;">
+          <p style="font-size: 13px; color: #FAAD14; margin: 0;">让 AI 从"只会说话"变成"会自己干活"</p>
+        </section>
+      </section>
+
+      <section style="background: #F0F7FF; border-radius: 16px; padding: 18px 22px; margin: 0 0 28px; border: 1px solid #D9EAF7;">
+        <p style="margin: 0; font-size: 15px; color: #555; line-height: 1.9; letter-spacing: 0.5px;">本文是「AI 基础设施科普」系列第 <strong style="color: #4A90D9;">5</strong> 篇。上一篇我们聊了上下文窗口，知道了 AI 为什么会"变笨"。今天聊 AI 怎么从"只会说话"变成"会自己干活"。</p>
+      </section>
+
+      <p style="font-size: 17px; line-height: 1.9; color: #4A90D9; margin: 0 0 22px; font-weight: 700; letter-spacing: 0.5px;"><strong>Chatbot 只能"说话"，Agent 能"做事。"</strong></p>
+
+      <section style="margin: 40px 0 18px;">
+        <section style="display: flex; align-items: center; gap: 10px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #4A90D9; color: #fff; font-size: 16px; font-weight: 800; border-radius: 50%;">一</span>
+          <h2 style="font-size: 19px; font-weight: 700; color: #333; margin: 0; line-height: 1.5;">Chatbot 和 Agent 有什么区别？</h2>
+        </section>
+      </section>
+
+      <p style="font-size: 16px; line-height: 1.9; color: #333; margin: 0 0 22px; letter-spacing: 0.5px;">你可能用过 ChatGPT 聊天，也听过"AI Agent"这个词。它们最大的区别可以用一句话说清：</p>
+
+      <section style="background: #F0F7FF; border-radius: 16px; padding: 18px 22px; margin: 0 0 22px; border-left: 4px solid #4A90D9;">
+        <p style="margin: 0 0 12px; font-size: 15px; color: #555; line-height: 1.9; letter-spacing: 0.5px;">你去餐厅，Chatbot 像一个只会念菜单的服务员——你问什么它答什么，但不会帮你下单、上菜、结账。</p>
+        <p style="margin: 0; font-size: 15px; color: #555; line-height: 1.9; letter-spacing: 0.5px;">Agent 像一个真正的餐厅经理——你告诉他"我要办一场十人聚餐"，他自己安排菜单、下单、排座位、催菜。</p>
+      </section>
+
+      <section style="margin: 24px 0; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: separate; border-spacing: 0; font-size: 14px; border-radius: 12px; overflow: hidden;">
+          <thead><tr>
+            <th style="padding: 12px; text-align: center; color: #fff; font-weight: 600; background: #4A90D9;">维度</th>
+            <th style="padding: 12px; text-align: center; color: #fff; font-weight: 600; background: #4A90D9;">Chatbot</th>
+            <th style="padding: 12px; text-align: center; color: #fff; font-weight: 600; background: #4A90D9;">Agent</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding: 10px 12px; text-align: center; color: #333; font-weight: 600; background: #F0F7FF;">交互方式</td><td style="padding: 10px 12px; text-align: center; color: #888; background: #fff;">你说一句，它回一句</td><td style="padding: 10px 12px; text-align: center; color: #888; background: #fff;">你给目标，它拆步骤执行</td></tr>
+            <tr><td style="padding: 10px 12px; text-align: center; color: #333; font-weight: 600; background: #F0F7FF;">工具使用</td><td style="padding: 10px 12px; text-align: center; color: #888; background: #F8FBFF;">不能调用外部工具</td><td style="padding: 10px 12px; text-align: center; color: #888; background: #F8FBFF;">可以读写文件、搜索网络</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section style="margin: 28px 0 22px;">
+        <section style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="background: #4A90D9; color: #fff; font-size: 13px; font-weight: 700; padding: 4px 14px; border-radius: 20px;">STEP 1</span>
+          <span style="font-size: 17px; font-weight: 700; color: #333;">用自然语言描述需求</span>
+        </section>
+        <p style="font-size: 16px; line-height: 1.9; color: #333; margin: 0; letter-spacing: 0.5px;">打开秒哒，进创作页面选类型——H5网页、小程序或App。大白话把需求说出来就行。</p>
+      </section>
+
+      <section style="background: #FFF1F0; border-radius: 12px; padding: 14px 20px; margin: 20px 0; border-left: 4px solid #FF6B6B;">
+        <p style="margin: 0; font-size: 15px; color: #555; line-height: 1.9; letter-spacing: 0.5px;"><strong style="color: #FF6B6B;">关键数据</strong>　传统开发2万元/4个月；秒哒不到50元/不到1小时。</p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0;">
+        <span style="display: inline-block; width: 8px; height: 8px; background: #4A90D9; border-radius: 50%; margin: 0 3px;"></span>
+        <span style="display: inline-block; width: 8px; height: 8px; background: #FF6B6B; border-radius: 50%; margin: 0 3px;"></span>
+        <span style="display: inline-block; width: 8px; height: 8px; background: #52C41A; border-radius: 50%; margin: 0 3px;"></span>
+      </section>
+
+      <section style="background: linear-gradient(135deg, #4A90D9 0%, #5BA3E8 100%); border-radius: 16px; padding: 20px 24px; margin: 24px 0;">
+        <p style="margin: 0; font-size: 16px; color: #fff; line-height: 1.9; font-weight: 600; letter-spacing: 0.5px;"><strong>Chatbot 是 AI 的"嘴"，Agent 是 AI 的"嘴 + 手 + 脑。"</strong></p>
+      </section>
+
+      <section style="text-align: center; margin: 28px 0; padding: 18px 20px; background: #FFFBE6; border: 2px solid #FAAD14; border-radius: 16px;">
+        <p style="font-size: 14px; color: #888; margin: 0; line-height: 1.9;">下一篇我们聊 <strong style="color: #FAAD14;">RAG</strong>——让 AI 读你的私有数据而不是瞎编。</p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0 20px;">
+        <span style="display: inline-block; width: 8px; height: 8px; background: #4A90D9; border-radius: 50%; margin: 0 3px;"></span>
+        <span style="display: inline-block; width: 8px; height: 8px; background: #FF6B6B; border-radius: 50%; margin: 0 3px;"></span>
+        <span style="display: inline-block; width: 8px; height: 8px; background: #52C41A; border-radius: 50%; margin: 0 3px;"></span>
+        <p style="font-size: 12px; color: #aaa; margin: 6px 0 0; letter-spacing: 2px;">END</p>
+      </section>
+
+      <section style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #F0F7FF 0%, #FFFBE6 100%); border-radius: 16px;">
+        <p style="font-size: 15px; color: #333; line-height: 2; margin: 0 0 8px; letter-spacing: 0.5px;">我是 <strong style="color: #4A90D9;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color: #4A90D9;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
+        <p style="font-size: 14px; color: #888; line-height: 2; margin: 0 0 10px; letter-spacing: 0.5px;">点击主页加群或者私信加群一起学习AI。</p>
+        <p style="font-size: 15px; color: #333; line-height: 2; margin: 0; letter-spacing: 0.5px;">如果你觉得今天这篇有收获，欢迎<strong style="color: #FF6B6B;">点赞、在看、转发</strong>三连，我们下篇见。</p>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. 水墨书法风 ===== -->
+<section class="theme-section" id="ink" style="background: #d4cfc4;">
+  <div class="theme-label">
+    <h2 style="color: #2c2c2c;">🖋 水墨书法风</h2>
+    <p style="color: #5a5a5a;">宋体 · 印章红 · 东方留白 · 深度思考</p>
+  </div>
+  <div class="demo-card" style="background: #f7f4ef; overflow: hidden; border: 1px solid #d4cfc4;">
+    <div style="padding: 12px 20px; background: #2c2c2c; font-size: 13px; color: #f7f4ef; font-family: 'Noto Serif SC',serif;">水墨书法风 · 宁的AI小站</div>
+    <div style="padding: 20px 16px;">
+
+      <section style="margin-bottom: 36px; text-align: center;">
+        <p style="font-size: 12px; color: #9a9a9a; letter-spacing: 4px; margin-bottom: 14px; font-family: 'Noto Serif SC',serif;">AI 基础设施科普 · 第 五 篇</p>
+        <h1 style="font-size: 24px; font-weight: 700; color: #2c2c2c; line-height: 1.5; margin: 0 0 12px; font-family: 'Noto Serif SC',serif; letter-spacing: 2px;">不只是"聊天机器人"</h1>
+        <p style="font-size: 15px; color: #8b7355; margin: 0 0 16px; font-family: 'Noto Serif SC',serif; letter-spacing: 1px;">——AI Agent 到底是什么？</p>
+        <section style="display: inline-block; border-top: 1px solid #d4cfc4; border-bottom: 1px solid #d4cfc4; padding: 6px 30px;">
+          <p style="font-size: 13px; color: #9a9a9a; margin: 0; letter-spacing: 1px;">让 AI 从"只会说话"变成"会自己干活"</p>
+        </section>
+      </section>
+
+      <section style="background: #f0ece4; border-left: 3px solid #b8323a; padding: 18px 22px; margin: 0 0 28px;">
+        <p style="margin: 0; font-size: 15px; color: #5a5a5a; line-height: 2; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">本文是「AI 基础设施科普」系列第 <strong style="color: #b8323a;">五</strong> 篇。上一篇我们聊了上下文窗口，知道了 AI 为什么会"变笨"。今天聊 AI 怎么从"只会说话"变成"会自己干活"。</p>
+      </section>
+
+      <p style="font-size: 17px; line-height: 2; color: #2c2c2c; margin: 0 0 22px; font-weight: 700; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;"><strong>Chatbot 只能"说话"，Agent 能"做事。"</strong></p>
+
+      <section style="margin: 40px 0 18px;">
+        <h2 style="font-size: 19px; font-weight: 700; color: #2c2c2c; margin: 0; padding-left: 14px; border-left: 3px solid #2c2c2c; line-height: 1.5; font-family: 'Noto Serif SC',serif; letter-spacing: 1px;">一、Chatbot 和 Agent 有何不同？</h2>
+      </section>
+
+      <p style="font-size: 16px; line-height: 2; color: #3a3a3a; margin: 0 0 22px; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">你可能用过 ChatGPT 聊天，也听过"AI Agent"这个词。它们最大的区别可以用一句话说清：</p>
+
+      <section style="background: #f0ece4; border-left: 3px solid #8b7355; padding: 16px 22px; margin: 0 0 22px;">
+        <p style="margin: 0 0 12px; font-size: 15px; color: #5a5a5a; line-height: 2; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">你去餐厅，Chatbot 像一个只会念菜单的服务员——你问什么它答什么，但不会帮你下单、上菜、结账。</p>
+        <p style="margin: 0; font-size: 15px; color: #5a5a5a; line-height: 2; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">Agent 像一个真正的餐厅经理——你告诉他"我要办一场十人聚餐"，他自己安排菜单、下单、排座位、催菜。</p>
+      </section>
+
+      <section style="margin: 24px 0; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px; font-family: 'Noto Serif SC',serif;">
+          <thead><tr>
+            <th style="padding: 12px; text-align: center; color: #2c2c2c; font-weight: 700; border-bottom: 2px solid #2c2c2c; letter-spacing: 1px;">维度</th>
+            <th style="padding: 12px; text-align: center; color: #2c2c2c; font-weight: 700; border-bottom: 2px solid #2c2c2c; letter-spacing: 1px;">Chatbot</th>
+            <th style="padding: 12px; text-align: center; color: #2c2c2c; font-weight: 700; border-bottom: 2px solid #2c2c2c; letter-spacing: 1px;">Agent</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding: 10px 12px; text-align: center; color: #2c2c2c; font-weight: 600; border-bottom: 1px solid #d4cfc4;">交互方式</td><td style="padding: 10px 12px; text-align: center; color: #8b7355; border-bottom: 1px solid #d4cfc4;">你说一句，它回一句</td><td style="padding: 10px 12px; text-align: center; color: #8b7355; border-bottom: 1px solid #d4cfc4;">你给目标，它拆步骤执行</td></tr>
+            <tr><td style="padding: 10px 12px; text-align: center; color: #2c2c2c; font-weight: 600; border-bottom: 1px solid #d4cfc4;">工具使用</td><td style="padding: 10px 12px; text-align: center; color: #8b7355; border-bottom: 1px solid #d4cfc4;">不能调用外部工具</td><td style="padding: 10px 12px; text-align: center; color: #8b7355; border-bottom: 1px solid #d4cfc4;">可以读写文件、搜索网络</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section style="margin: 28px 0 22px;">
+        <section style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="color: #b8323a; font-size: 14px; font-weight: 700; padding: 2px 0; border-bottom: 2px solid #b8323a; font-family: 'Noto Serif SC',serif; letter-spacing: 2px;">第一步</span>
+          <span style="font-size: 17px; font-weight: 700; color: #2c2c2c; font-family: 'Noto Serif SC',serif;">用自然语言描述需求</span>
+        </section>
+        <p style="font-size: 16px; line-height: 2; color: #3a3a3a; margin: 0; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">打开秒哒，进创作页面选类型——H5网页、小程序或App。大白话把需求说出来就行。</p>
+      </section>
+
+      <section style="background: #f0ece4; border-left: 3px solid #b8323a; padding: 14px 22px; margin: 20px 0;">
+        <p style="margin: 0; font-size: 15px; color: #5a5a5a; line-height: 2; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;"><strong style="color: #b8323a;">关键数据</strong>　传统开发2万元/4个月；秒哒不到50元/不到1小时。</p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0;">
+        <span style="display: inline-block; width: 60px; border-top: 1px solid #d4cfc4;"></span>
+        <span style="display: inline-block; margin: 0 12px; color: #b8323a; font-size: 12px; font-family: 'Noto Serif SC',serif;">❖</span>
+        <span style="display: inline-block; width: 60px; border-top: 1px solid #d4cfc4;"></span>
+      </section>
+
+      <section style="background: #f0ece4; border-top: 2px solid #2c2c2c; border-bottom: 2px solid #2c2c2c; padding: 20px 24px; margin: 24px 0;">
+        <p style="margin: 0; font-size: 16px; color: #2c2c2c; line-height: 2; font-weight: 600; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif; text-align: center;"><strong>Chatbot 是 AI 的"嘴"，Agent 是 AI 的"嘴 + 手 + 脑。"</strong></p>
+      </section>
+
+      <section style="text-align: center; margin: 28px 0; padding: 16px 20px; border-top: 1px solid #2c2c2c; border-bottom: 1px solid #2c2c2c;">
+        <p style="font-size: 14px; color: #5a5a5a; margin: 0; line-height: 2; font-family: 'Noto Serif SC',serif; letter-spacing: 0.5px;">下一篇我们聊 <strong style="color: #b8323a;">RAG</strong>——让 AI 读你的私有数据而不是瞎编。</p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0 20px;">
+        <section style="display: inline-block; border: 2px solid #b8323a; padding: 4px 12px;">
+          <p style="font-size: 13px; color: #b8323a; margin: 0; letter-spacing: 4px; font-family: 'Noto Serif SC',serif; font-weight: 700;">终</p>
+        </section>
+      </section>
+
+      <section style="margin-top: 40px; padding-top: 24px; border-top: 1px double #2c2c2c;">
+        <p style="font-size: 15px; color: #3a3a3a; line-height: 2; margin: 0 0 8px; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">我是 <strong style="color: #b8323a;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color: #b8323a;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
+        <p style="font-size: 14px; color: #8b7355; line-height: 2; margin: 0 0 10px; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">点击主页加群或者私信加群一起学习AI。</p>
+        <p style="font-size: 15px; color: #3a3a3a; line-height: 2; margin: 0; letter-spacing: 0.5px; font-family: 'Noto Serif SC',serif;">如果你觉得今天这篇有收获，欢迎<strong style="color: #b8323a;">点赞、在看、转发</strong>三连，我们下篇见。</p>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. 极简留白风 ===== -->
+<section class="theme-section" id="minimal" style="background: #e5e7eb;">
+  <div class="theme-label">
+    <h2 style="color: #1f2937;">⚪ 极简留白风</h2>
+    <p style="color: #6b7280;">单一蓝 · 细线 · 大量留白 · 干净利落</p>
+  </div>
+  <div class="demo-card" style="background: #fff; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb;">
+    <div style="padding: 12px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; font-size: 13px; color: #374151;">极简留白风 · 宁的AI小站</div>
+    <div style="padding: 24px 20px;">
+
+      <section style="margin-bottom: 40px;">
+        <p style="font-size: 12px; color: #6b7280; letter-spacing: 2px; margin-bottom: 12px;">AI 基础设施科普 · 第 5 篇</p>
+        <h1 style="font-size: 26px; font-weight: 800; color: #1f2937; line-height: 1.4; margin: 0 0 8px; letter-spacing: -0.5px;">不只是"聊天机器人"</h1>
+        <p style="font-size: 15px; color: #6b7280; margin: 0;">——AI Agent 到底是什么？</p>
+      </section>
+
+      <section style="border-left: 2px solid #2563eb; padding: 4px 0 4px 16px; margin: 0 0 28px;">
+        <p style="margin: 0; font-size: 15px; color: #4b5563; line-height: 1.9; letter-spacing: 0.3px;">本文是「AI 基础设施科普」系列第 <strong style="color: #2563eb;">5</strong> 篇。上一篇我们聊了上下文窗口，知道了 AI 为什么会"变笨"。今天聊 AI 怎么从"只会说话"变成"会自己干活"。</p>
+      </section>
+
+      <p style="font-size: 17px; line-height: 1.9; color: #2563eb; margin: 0 0 22px; font-weight: 700;"><strong>Chatbot 只能"说话"，Agent 能"做事。"</strong></p>
+
+      <h2 style="font-size: 20px; font-weight: 700; color: #1f2937; margin: 40px 0 16px; line-height: 1.5; letter-spacing: -0.3px;">一、Chatbot 和 Agent 有什么区别？</h2>
+
+      <p style="font-size: 16px; line-height: 1.9; color: #374151; margin: 0 0 22px; letter-spacing: 0.3px;">你可能用过 ChatGPT 聊天，也听过"AI Agent"这个词。它们最大的区别可以用一句话说清：</p>
+
+      <section style="border-left: 2px solid #e5e7eb; padding: 4px 0 4px 16px; margin: 0 0 22px;">
+        <p style="margin: 0 0 12px; font-size: 15px; color: #6b7280; line-height: 1.9; letter-spacing: 0.3px;">你去餐厅，Chatbot 像一个只会念菜单的服务员——你问什么它答什么，但不会帮你下单、上菜、结账。</p>
+        <p style="margin: 0; font-size: 15px; color: #6b7280; line-height: 1.9; letter-spacing: 0.3px;">Agent 像一个真正的餐厅经理——你告诉他"我要办一场十人聚餐"，他自己安排菜单、下单、排座位、催菜。</p>
+      </section>
+
+      <section style="margin: 24px 0; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <thead><tr>
+            <th style="padding: 10px 12px; text-align: left; color: #1f2937; font-weight: 700; border-bottom: 2px solid #1f2937;">维度</th>
+            <th style="padding: 10px 12px; text-align: left; color: #1f2937; font-weight: 700; border-bottom: 2px solid #1f2937;">Chatbot</th>
+            <th style="padding: 10px 12px; text-align: left; color: #1f2937; font-weight: 700; border-bottom: 2px solid #1f2937;">Agent</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding: 10px 12px; color: #1f2937; font-weight: 600; border-bottom: 1px solid #e5e7eb;">交互方式</td><td style="padding: 10px 12px; color: #6b7280; border-bottom: 1px solid #e5e7eb;">你说一句，它回一句</td><td style="padding: 10px 12px; color: #6b7280; border-bottom: 1px solid #e5e7eb;">你给目标，它拆步骤执行</td></tr>
+            <tr><td style="padding: 10px 12px; color: #1f2937; font-weight: 600; border-bottom: 1px solid #e5e7eb;">工具使用</td><td style="padding: 10px 12px; color: #6b7280; border-bottom: 1px solid #e5e7eb;">不能调用外部工具</td><td style="padding: 10px 12px; color: #6b7280; border-bottom: 1px solid #e5e7eb;">可以读写文件、搜索网络</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section style="margin: 28px 0 22px;">
+        <section style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="color: #2563eb; font-size: 13px; font-weight: 700; font-family: 'Consolas',monospace;">01.</span>
+          <span style="font-size: 17px; font-weight: 700; color: #1f2937;">用自然语言描述需求</span>
+        </section>
+        <p style="font-size: 16px; line-height: 1.9; color: #374151; margin: 0; letter-spacing: 0.3px;">打开秒哒，进创作页面选类型——H5网页、小程序或App。大白话把需求说出来就行。</p>
+      </section>
+
+      <section style="border-left: 2px solid #dc2626; padding: 4px 0 4px 16px; margin: 20px 0;">
+        <p style="margin: 0; font-size: 15px; color: #4b5563; line-height: 1.9; letter-spacing: 0.3px;"><strong style="color: #dc2626;">关键数据</strong>　传统开发2万元/4个月；秒哒不到50元/不到1小时。</p>
+      </section>
+
+      <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 36px 0;" />
+
+      <section style="border-left: 3px solid #2563eb; padding: 8px 0 8px 16px; margin: 28px 0;">
+        <p style="margin: 0; font-size: 17px; color: #1f2937; line-height: 1.8; font-weight: 700;"><strong>Chatbot 是 AI 的"嘴"，Agent 是 AI 的"嘴 + 手 + 脑。"</strong></p>
+      </section>
+
+      <section style="border: 1px solid #e5e7eb; border-radius: 4px; padding: 16px 20px; margin: 28px 0;">
+        <p style="font-size: 14px; color: #6b7280; margin: 0; line-height: 1.9;">下一篇我们聊 <strong style="color: #2563eb;">RAG</strong>——让 AI 读你的私有数据而不是瞎编。</p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0 20px;">
+        <p style="font-size: 12px; color: #d1d5db; margin: 0; letter-spacing: 3px;">— END —</p>
+      </section>
+
+      <section style="margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb;">
+        <p style="font-size: 15px; color: #374151; line-height: 2; margin: 0 0 8px;">我是 <strong style="color: #2563eb;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color: #2563eb;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
+        <p style="font-size: 14px; color: #9ca3af; line-height: 2; margin: 0 0 10px;">点击主页加群或者私信加群一起学习AI。</p>
+        <p style="font-size: 15px; color: #374151; line-height: 2; margin: 0;">如果你觉得今天这篇有收获，欢迎<strong style="color: #dc2626;">点赞、在看、转发</strong>三连，我们下篇见。</p>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. 代码极客风 ===== -->
+<section class="theme-section" id="geek" style="background: #0d1117;">
+  <div class="theme-label">
+    <h2 style="color: #58a6ff;">⚡ 代码极客风</h2>
+    <p style="color: #8b949e;">终端美学 · &gt; 提示符 · monospace · 技术感拉满</p>
+  </div>
+  <div class="demo-card" style="background: #fff; border-radius: 8px; overflow: hidden; border: 1px solid #d0d7de;">
+    <div style="padding: 10px 16px; background: #f6f8fa; border-bottom: 1px solid #d0d7de; font-size: 13px; color: #24292f; font-family: 'Cascadia Code','Consolas',monospace; display: flex; align-items: center; gap: 8px;">
+      <span style="display: inline-block; width: 10px; height: 10px; background: #ff5f56; border-radius: 50%;"></span>
+      <span style="display: inline-block; width: 10px; height: 10px; background: #ffbd2e; border-radius: 50%;"></span>
+      <span style="display: inline-block; width: 10px; height: 10px; background: #27c93f; border-radius: 50%;"></span>
+      <span style="margin-left: 8px;">geek_style.md — 宁的AI小站</span>
+    </div>
+    <div style="padding: 20px 16px;">
+
+      <section style="margin-bottom: 36px;">
+        <p style="font-size: 12px; color: #636c76; margin-bottom: 12px; font-family: 'Cascadia Code','Consolas',monospace;">// AI_基础设施科普 / ep.05</p>
+        <h1 style="font-size: 24px; font-weight: 800; color: #24292f; line-height: 1.4; margin: 0 0 8px;">不只是"聊天机器人"</h1>
+        <p style="font-size: 15px; color: #0969da; margin: 0 0 12px; font-family: 'Cascadia Code','Consolas',monospace;">$ AI_Agent --what-is-it</p>
+        <p style="font-size: 14px; color: #636c76; margin: 0;">&gt; 让 AI 从"只会说话"变成"会自己干活"</p>
+      </section>
+
+      <section style="background: #f6f8fa; border-left: 3px solid #0969da; padding: 14px 18px; margin: 0 0 28px; border-radius: 0 6px 6px 0;">
+        <p style="margin: 0 0 6px; font-size: 13px; color: #636c76; font-family: 'Cascadia Code','Consolas',monospace;">README.md</p>
+        <p style="margin: 0; font-size: 15px; color: #24292f; line-height: 1.9; letter-spacing: 0.3px;">本文是「AI 基础设施科普」系列第 <strong style="color: #0969da;">5</strong> 篇。上一篇我们聊了上下文窗口，知道了 AI 为什么会"变笨"。今天聊 AI 怎么从"只会说话"变成"会自己干活"。</p>
+      </section>
+
+      <section style="background: #f6f8fa; border-radius: 6px; padding: 12px 16px; margin: 0 0 22px; border-left: 3px solid #1a7f37;">
+        <p style="margin: 0; font-size: 16px; line-height: 1.9; color: #1a7f37; font-weight: 700;">
+          <span style="font-family: 'Cascadia Code','Consolas',monospace; margin-right: 6px;">&gt;</span><strong>Chatbot 只能"说话"，Agent 能"做事。"</strong>
+        </p>
+      </section>
+
+      <section style="margin: 40px 0 18px;">
+        <h2 style="font-size: 19px; font-weight: 700; color: #24292f; margin: 0; line-height: 1.5;">
+          <span style="color: #8250df; font-family: 'Cascadia Code','Consolas',monospace; font-size: 16px; margin-right: 8px;">##</span>一、Chatbot 和 Agent 有什么区别？
+        </h2>
+      </section>
+
+      <p style="font-size: 16px; line-height: 1.9; color: #24292f; margin: 0 0 22px; letter-spacing: 0.3px;">你可能用过 ChatGPT 聊天，也听过"AI Agent"这个词。它们最大的区别可以用一句话说清：</p>
+
+      <section style="background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 6px; padding: 16px 18px; margin: 0 0 22px;">
+        <p style="margin: 0 0 6px; font-size: 12px; color: #636c76; font-family: 'Cascadia Code','Consolas',monospace;">// 生活类比</p>
+        <p style="margin: 0 0 12px; font-size: 15px; color: #24292f; line-height: 1.9; letter-spacing: 0.3px;">你去餐厅，Chatbot 像一个只会念菜单的服务员——你问什么它答什么，但不会帮你下单、上菜、结账。</p>
+        <p style="margin: 0; font-size: 15px; color: #24292f; line-height: 1.9; letter-spacing: 0.3px;">Agent 像一个真正的餐厅经理——你告诉他"我要办一场十人聚餐"，他自己安排菜单、下单、排座位、催菜。</p>
+      </section>
+
+      <section style="margin: 24px 0; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px; border: 1px solid #d0d7de; border-radius: 6px; overflow: hidden;">
+          <thead><tr style="background: #f6f8fa;">
+            <th style="padding: 10px 12px; text-align: left; color: #24292f; font-weight: 700; border-bottom: 1px solid #d0d7de; font-family: 'Cascadia Code','Consolas',monospace; font-size: 13px;">dimension</th>
+            <th style="padding: 10px 12px; text-align: left; color: #24292f; font-weight: 700; border-bottom: 1px solid #d0d7de; font-family: 'Cascadia Code','Consolas',monospace; font-size: 13px;">Chatbot</th>
+            <th style="padding: 10px 12px; text-align: left; color: #24292f; font-weight: 700; border-bottom: 1px solid #d0d7de; font-family: 'Cascadia Code','Consolas',monospace; font-size: 13px;">Agent</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding: 10px 12px; color: #24292f; font-weight: 600; border-bottom: 1px solid #d0d7de;">交互方式</td><td style="padding: 10px 12px; color: #636c76; border-bottom: 1px solid #d0d7de;">你说一句，它回一句</td><td style="padding: 10px 12px; color: #636c76; border-bottom: 1px solid #d0d7de;">你给目标，它拆步骤执行</td></tr>
+            <tr><td style="padding: 10px 12px; color: #24292f; font-weight: 600;">工具使用</td><td style="padding: 10px 12px; color: #636c76;">不能调用外部工具</td><td style="padding: 10px 12px; color: #636c76;">可以读写文件、搜索网络</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section style="margin: 28px 0 22px;">
+        <section style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="background: #0969da; color: #fff; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Cascadia Code','Consolas',monospace;">STEP_01</span>
+          <span style="font-size: 17px; font-weight: 700; color: #24292f;">用自然语言描述需求</span>
+        </section>
+        <p style="font-size: 16px; line-height: 1.9; color: #24292f; margin: 0; letter-spacing: 0.3px;">打开秒哒，进创作页面选类型——H5网页、小程序或App。大白话把需求说出来就行。</p>
+      </section>
+
+      <section style="background: #fff1f0; border: 1px solid #ffa39e; border-radius: 6px; padding: 14px 18px; margin: 20px 0;">
+        <p style="margin: 0; font-size: 15px; color: #24292f; line-height: 1.9; letter-spacing: 0.3px;">
+          <span style="color: #cf222e; font-weight: 700; font-family: 'Cascadia Code','Consolas',monospace; font-size: 13px;">[ERROR]</span> <strong style="color: #cf222e;">关键数据</strong>　传统开发2万元/4个月；秒哒不到50元/不到1小时。
+        </p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0;">
+        <span style="font-family: 'Cascadia Code','Consolas',monospace; color: #d0d7de; font-size: 13px;">// ────────────────────</span>
+      </section>
+
+      <section style="background: #0d1117; border-radius: 6px; padding: 18px 20px; margin: 24px 0;">
+        <p style="margin: 0 0 6px; font-size: 12px; color: #1a7f37; font-family: 'Cascadia Code','Consolas',monospace;">// key takeaway</p>
+        <p style="margin: 0; font-size: 16px; color: #e6edf3; line-height: 1.9; font-weight: 600;"><strong>Chatbot 是 AI 的"嘴"，Agent 是 AI 的"嘴 + 手 + 脑。"</strong></p>
+      </section>
+
+      <section style="background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 6px; padding: 16px 18px; margin: 28px 0;">
+        <p style="margin: 0 0 4px; font-size: 12px; color: #636c76; font-family: 'Cascadia Code','Consolas',monospace;">// next_episode</p>
+        <p style="margin: 0; font-size: 15px; color: #24292f; line-height: 1.9;">下一篇我们聊 <strong style="color: #0969da;">RAG</strong>——让 AI 读你的私有数据而不是瞎编。</p>
+      </section>
+
+      <section style="text-align: center; margin: 36px 0 20px;">
+        <p style="font-size: 13px; color: #d0d7de; margin: 0; font-family: 'Cascadia Code','Consolas',monospace;">
+          <span style="color: #1a7f37;">$</span> <span style="color: #636c76;">exit 0</span> <span style="color: #d0d7de;">// EOF</span>
+        </p>
+      </section>
+
+      <section style="margin-top: 40px; padding-top: 24px; border-top: 1px solid #d0d7de;">
+        <p style="margin: 0 0 4px; font-size: 12px; color: #636c76; font-family: 'Cascadia Code','Consolas',monospace;">// author</p>
+        <p style="font-size: 15px; color: #24292f; line-height: 2; margin: 0 0 8px;">我是 <strong style="color: #0969da;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color: #0969da;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
+        <p style="font-size: 14px; color: #636c76; line-height: 2; margin: 0 0 10px;">点击主页加群或者私信加群一起学习AI。</p>
+        <p style="font-size: 15px; color: #24292f; line-height: 2; margin: 0;">如果你觉得今天这篇有收获，欢迎<strong style="color: #cf222e;">点赞、在看、转发</strong>三连，我们下篇见。</p>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.theme-nav a').forEach(a => {
+  a.addEventListener('click', function() {
+    document.querySelectorAll('.theme-nav a').forEach(x => x.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
