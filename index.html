@@ -671,54 +671,55 @@ storybook: {
 </section>`; }
 },
 
-/* ---------- 11. 活动宣发风（v5.2 新增） ---------- */
+/* ---------- 11. 活动宣发风（v5.2 新增 · 海报配色版） ---------- */
 launch: {
-  name:'活动宣发风', dot:'#FF5722', previewBg:'#fafafa',
-  page:"background:#FAFAFA;padding:24px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;font-size:16px;line-height:1.9;color:#1A1A1A;letter-spacing:.3px;",
+  name:'活动宣发风', dot:'#1E40AF', previewBg:'#ECE6D3',
+  page:"background:#ECE6D3;padding:24px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;font-size:16px;line-height:1.9;color:#1A1A1A;letter-spacing:.3px;",
   bqIntroLabel:'活动速览',
   bqKeyLabel:'现场快报',
   styles:{
     p:"font-size:16px;line-height:1.9;color:#1A1A1A;margin:0 0 22px;letter-spacing:.3px;",
     bqP:"margin:0 0 10px;font-size:15px;color:#1A1A1A;line-height:1.9;letter-spacing:.3px;",
-    strong:"color:#FF5722;font-weight:700;", em:"color:#1E40AF;font-style:normal;font-weight:600;border-bottom:1px dashed #1E40AF;",
-    a:"color:#FF5722;text-decoration:underline;font-weight:600;",
-    code:"background:#FFF3E0;color:#FF5722;padding:2px 8px;border-radius:4px;font-size:14px;font-family:Consolas,Monaco,monospace;",
+    strong:"color:#1A1A1A;font-weight:800;background:linear-gradient(180deg,transparent 60%,#F4E94B 60%);padding:0 2px;",
+    em:"color:#1E40AF;font-style:normal;font-weight:700;border-bottom:2px solid #F4E94B;",
+    a:"color:#1E40AF;text-decoration:underline;font-weight:600;text-decoration-color:#F4E94B;text-underline-offset:3px;",
+    code:"background:#1A1A1A;color:#F4E94B;padding:2px 8px;border-radius:4px;font-size:14px;font-family:Consolas,Monaco,monospace;",
     ul:"font-size:16px;line-height:1.9;color:#1A1A1A;padding-left:22px;margin:0 0 22px;letter-spacing:.3px;",
     ol:"font-size:16px;line-height:1.9;color:#1A1A1A;padding-left:22px;margin:0 0 22px;letter-spacing:.3px;",
     li:"margin-bottom:10px;",
-    blockquote:"background:#FFF8F2;border-left:4px solid #FF5722;border-radius:0 12px 12px 0;padding:18px 22px;margin:0 0 22px;",
+    blockquote:"background:#FAF7EE;border-left:4px solid #1E40AF;border-radius:0 12px 12px 0;padding:18px 22px;margin:0 0 22px;",
     blockquoteIntro:"background:#1E40AF;color:#FFFFFF;border-radius:12px;padding:22px 26px;margin:0 0 28px;",
-    blockquoteKey:"background:linear-gradient(135deg,#FF5722 0%,#FF7043 100%);color:#FFFFFF;border-radius:12px;padding:22px 26px;margin:24px 0;box-shadow:0 4px 16px rgba(255,87,34,.25);",
-    blockquoteKeyP:"margin:0;font-size:17px;color:#FFFFFF;line-height:1.9;font-weight:700;",
+    blockquoteKey:"background:#1A1A1A;color:#F4E94B;border-radius:12px;padding:22px 26px;margin:24px 0;box-shadow:0 4px 16px rgba(0,0,0,.18);",
+    blockquoteKeyP:"margin:0;font-size:17px;color:#F4E94B;line-height:1.9;font-weight:700;",
     table:"width:100%;border-collapse:collapse;font-size:14px;border-radius:8px;overflow:hidden;",
     th:"padding:12px;text-align:center;color:#FFFFFF;font-weight:700;background:#1E40AF;letter-spacing:1px;",
-    td:"padding:10px 12px;text-align:center;color:#1A1A1A;background:#FFFFFF;border-bottom:1px solid #EEEEEE;",
+    td:"padding:10px 12px;text-align:center;color:#1A1A1A;background:#FFFFFF;border-bottom:1px solid #ECE6D3;",
     img:"max-width:100%;border-radius:12px;display:block;margin:0 auto;border:4px solid #FFFFFF;box-shadow:0 8px 32px rgba(0,0,0,.18);",
     figure:"margin:32px 0;text-align:center;",
-    figcaption:"font-size:13px;color:#FF5722;margin:12px 0 0;font-weight:600;letter-spacing:1px;"
+    figcaption:"font-size:13px;color:#1E40AF;margin:12px 0 0;font-weight:600;letter-spacing:1px;"
   },
   title(t){ const s = splitTitle(t); return `
 <section style="margin-bottom:36px;">
   <section style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
-    <span style="display:inline-block;background:#FF5722;color:#FFFFFF;font-size:12px;padding:5px 14px;border-radius:4px;font-weight:700;letter-spacing:1px;">活动预告</span>
-    <span style="display:inline-block;background:#1E40AF;color:#FFFFFF;font-size:12px;padding:5px 14px;border-radius:4px;font-weight:700;letter-spacing:1px;">2026.08.22</span>
+    <span style="display:inline-block;background:#1A1A1A;color:#F4E94B;font-size:12px;padding:5px 14px;border-radius:4px;font-weight:700;letter-spacing:1px;">活动预告</span>
+    <span style="display:inline-block;background:#FFFFFF;color:#1E40AF;font-size:12px;padding:5px 14px;border:1.5px solid #1E40AF;border-radius:4px;font-weight:700;letter-spacing:1px;">2026.08.22</span>
   </section>
-  <h1 style="font-size:26px;font-weight:800;color:#1A1A1A;line-height:1.4;margin:0 0 10px;">${s.main}</h1>
-  ${s.sub?`<p style="font-size:15px;color:#FF5722;margin:0 0 14px;font-weight:600;">${s.sub}</p>`:''}
-  <section style="height:3px;width:60px;background:#FF5722;"></section>
+  <h1 style="font-size:28px;font-weight:900;color:#1A1A1A;line-height:1.35;margin:0 0 10px;letter-spacing:-.5px;">${s.main}</h1>
+  ${s.sub?`<p style="font-size:15px;color:#1E40AF;margin:0 0 14px;font-weight:600;">${s.sub}</p>`:''}
+  <section style="height:4px;width:60px;background:linear-gradient(90deg,#F4E94B 0%,#F4E94B 50%,#1E40AF 50%,#1E40AF 100%);"></section>
 </section>`; },
-  h2(t){ const c = splitChapter(t); return `<section style="margin:40px 0 18px;"><section style="display:flex;align-items:center;gap:14px;">${c.cn?`<span style="display:inline-flex;align-items:center;justify-content:center;min-width:40px;height:40px;background:#1E40AF;color:#FFFFFF;font-size:16px;font-weight:800;border-radius:8px;padding:0 10px;flex-shrink:0;">${c.cn}</span>`:''}<h2 style="font-size:19px;font-weight:800;color:#1A1A1A;margin:0;line-height:1.4;">${c.text}</h2></section></section>`; },
-  h3(t){ return `<h3 style="font-size:17px;font-weight:700;color:#FF5722;margin:28px 0 12px;padding-left:12px;border-left:4px solid #FF5722;">${t}</h3>`; },
-  hr(){ return `<section style="text-align:center;margin:36px 0;"><span style="display:inline-block;width:60px;height:3px;background:linear-gradient(90deg,#FF5722,#1E40AF);"></span></section>`; },
-  pre(code){ return `<section style="background:#1E1E1E;border-radius:12px;padding:16px;margin:20px 0;overflow-x:auto;"><pre style="margin:0;font-size:13px;line-height:1.7;color:#E0E0E0;font-family:Consolas,Monaco,monospace;white-space:pre-wrap;word-wrap:break-word;"><code>${code}</code></pre></section>`; },
+  h2(t){ const c = splitChapter(t); return `<section style="margin:40px 0 18px;"><section style="display:flex;align-items:center;gap:14px;">${c.cn?`<span style="display:inline-flex;align-items:center;justify-content:center;min-width:40px;height:40px;background:#1A1A1A;color:#F4E94B;font-size:16px;font-weight:800;border-radius:8px;padding:0 10px;flex-shrink:0;">${c.cn}</span>`:''}<h2 style="font-size:19px;font-weight:800;color:#1A1A1A;margin:0;line-height:1.4;">${c.text}</h2></section></section>`; },
+  h3(t){ return `<h3 style="font-size:17px;font-weight:700;color:#1E40AF;margin:28px 0 12px;padding-left:12px;border-left:4px solid #F4E94B;">${t}</h3>`; },
+  hr(){ return `<section style="text-align:center;margin:36px 0;"><span style="display:inline-block;width:60px;height:3px;background:#1A1A1A;"></span></section>`; },
+  pre(code){ return `<section style="background:#1A1A1E;border-radius:12px;padding:16px;margin:20px 0;overflow-x:auto;"><pre style="margin:0;font-size:13px;line-height:1.7;color:#E0E0E0;font-family:Consolas,Monaco,monospace;white-space:pre-wrap;word-wrap:break-word;"><code>${code}</code></pre></section>`; },
   signature(){ return `
 <section style="text-align:center;margin:40px 0 24px;">
-  <section style="display:inline-block;background:#FF5722;color:#FFFFFF;padding:10px 36px;border-radius:30px;font-size:14px;font-weight:700;letter-spacing:2px;box-shadow:0 4px 12px rgba(255,87,34,.35);">8月22日 · 不见不散</section>
+  <section style="display:inline-block;background:#1A1A1A;color:#F4E94B;padding:10px 36px;border-radius:30px;font-size:14px;font-weight:700;letter-spacing:2px;box-shadow:0 4px 12px rgba(0,0,0,.2);">8月22日 · 不见不散</section>
 </section>
 <section style="margin-top:32px;background:#1E40AF;color:#FFFFFF;border-radius:16px;padding:28px 30px;box-shadow:0 8px 24px rgba(30,64,175,.25);">
-  <p style="font-size:15px;color:#FFFFFF;line-height:2;margin:0 0 8px;">我是 <strong style="color:#FFB74D;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color:#FFB74D;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
-  <p style="font-size:14px;color:rgba(255,255,255,.78);line-height:2;margin:0 0 10px;">点击主页加群或者私信加群一起学习AI。</p>
-  <p style="font-size:15px;color:#FFFFFF;line-height:2;margin:0;">如果你觉得今天这篇有收获，欢迎<strong style="color:#FFB74D;">点赞、在看、转发</strong>三连，我们下篇见。</p>
+  <p style="font-size:15px;color:#FFFFFF;line-height:2;margin:0 0 8px;">我是 <strong style="color:#F4E94B;">GoodTime</strong>，｜全栈·AI讲师·社区主理人｜公众号<strong style="color:#F4E94B;">【宁的AI小站】</strong>——用技术让AI更实用。</p>
+  <p style="font-size:14px;color:rgba(255,255,255,.85);line-height:2;margin:0 0 10px;">点击主页加群或者私信加群一起学习AI。</p>
+  <p style="font-size:15px;color:#FFFFFF;line-height:2;margin:0;">如果你觉得今天这篇有收获，欢迎<strong style="color:#F4E94B;">点赞、在看、转发</strong>三连，我们下篇见。</p>
 </section>`; }
 }
 };
@@ -784,9 +785,11 @@ function applyTheme(root, t){
     b.querySelectorAll('p').forEach((p,pi)=>{
       if(label && pi === 0) return;
       let actualPst = pst;
-      /* launch 主题特判：intro/key 是深色背景块，里面的 p 必须白色才看得见 */
-      if(t === THEMES.launch && (st === t.styles.blockquoteIntro || st === t.styles.blockquoteKey)){
+      /* launch 主题特判：intro 是深蓝块 → p 白色；key 是黑底块 → p 黄色 */
+      if(t === THEMES.launch && st === t.styles.blockquoteIntro){
         actualPst = "margin:0 0 10px;font-size:15px;color:#FFFFFF;line-height:1.9;letter-spacing:.3px;";
+      } else if(t === THEMES.launch && st === t.styles.blockquoteKey){
+        actualPst = "margin:0 0 10px;font-size:16px;color:#F4E94B;line-height:1.9;font-weight:700;letter-spacing:.3px;";
       }
       p.setAttribute('style', actualPst);
     });
