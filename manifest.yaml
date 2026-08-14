@@ -1,0 +1,23 @@
+name: ning-md2wechat
+displayName: 宁的AI小站 · 公众号排版工具
+slug: ning-md2wechat
+version: 1.0.0
+category: content
+description: 宁的AI小站（GoodTime）同款公众号 Markdown 排版工具，单文件 HTML、11 套主题、内联样式一键复制粘贴公众号，离线可用，带个人品牌调性。
+triggers:
+  - 公众号排版
+  - 微信排版
+  - Markdown 转公众号
+  - md2wechat
+  - 宁的AI小站排版
+  - 给文章排版
+  - 公众号 HTML
+tags:
+  - wechat
+  - markdown
+  - publishing
+  - html
+  - formatting
+  - goodtime
+author: GoodTime
+license: MIT
