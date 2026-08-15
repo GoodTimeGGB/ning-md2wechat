@@ -28,4 +28,5 @@ triggers:
   - 把这篇排成公众号
 author: GoodTime
 license: MIT
-homepage:/nicon: icon.png https://github.com/GoodTimeGGB/ning-md2wechat
+homepage: https://github.com/GoodTimeGGB/ning-md2wechat
+icon: icon.png
