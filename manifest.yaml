@@ -3,7 +3,7 @@ displayName: 宁的AI小站 · 公众号排版工具
 slug: ning-md2wechat
 version: 6.0.0
 category: content
-description: "宁的AI小站（GoodTime）同款公众号排版——双模式（单文件工具 + AI 对话内直接排版），11 套主题，Markdown 一键转内联样式 HTML。"
+description: "宁的AI小站（GoodTime）同款公众号排版工具——双模式：① 打开自带单文件 HTML 工具，粘贴 Markdown 一键生成可直粘公众号的内联样式 HTML；② 对 WorkBuddy 说『公众号排版』，让 AI 按宁的AI小站品牌调性直接产出公众号 HTML。内置 11 套主题（手绘/卡通/书法/极简/极客/杂志/柔光/棱镜/山水/故事/宣发），链接自动可点击、代码块一键复制。零外部依赖，离线可用，MIT 许可。"
 summary: "宁的AI小站排版 v6：单文件工具 + AI 直排双模式，11 套主题，品牌调性。"
 tags:
   - wechat
@@ -28,4 +28,4 @@ triggers:
   - 把这篇排成公众号
 author: GoodTime
 license: MIT
-homepage: https://github.com/GoodTimeGGB/ning-md2wechat
+homepage:/nicon: icon.png https://github.com/GoodTimeGGB/ning-md2wechat
